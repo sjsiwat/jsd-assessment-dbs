@@ -5,7 +5,7 @@
 ## Live Demo
 
 **Frontend:** https://siwat-chrome-burger.pages.dev/
-**Backend API:** https://siwat-chrome-burger.onrender.com
+**Backend API:** https://siwat-chrome-burger.onrender.com/api/menu-items
 
 ---
 
