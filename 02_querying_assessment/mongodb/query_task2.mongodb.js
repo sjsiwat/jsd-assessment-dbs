@@ -24,3 +24,12 @@ db.orders.find({"staff.first_name": "Jane" , "staff.last_name":"Doe"},{ order_da
 //
 // Your thinking:
 //
+/*
+โจทย์ให้หาออเดอร์ทั้งหมดของ Jane doe และในแต่ละออเดอร์ให้แสดงค่ากลับมาแค่ order_date และ total_price
+find staff.staff.name  jane staff.last_name doe 
+order_date 1
+total_price 1
+_id 0
+
+0 ไม่โชวค่า
+1 โชวค่า */

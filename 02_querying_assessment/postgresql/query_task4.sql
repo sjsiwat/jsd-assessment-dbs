@@ -23,4 +23,10 @@ WHERE Suppliers.name = 'Freshest Farm Produce';
 -- Write in English or Thai. Do not skip this step.
 --
 -- Your thinking:
---
+/*  โจทย์อยากได้รายชื่อ ingredients ทั้งหมดจาก freshest farm product
+ เริ่มจากหาชื่ีอวัตถุดิบก่อน ก้ต้องหาจากตาราง ingredients ส่วนของ name
+ แต่ว่าใน ingredient มันดันไม่มีชื่อฟาม งั้นก้ต้องเชื่อมข้อมูลตาราง
+ ใช้ join ตาราง ingredients กัย suppliers 
+ โดยที่ข้อมูลตรงส่วนที่จะเชื่อมกับคือ supplier_id ของทั้งสองตาราง ก้จะสามารถรู้ได้ว่า
+supplier_id นั้นๆ = supplier.name อะไร 
+ โดยที่หาว่า supplier name ต้องเป็นของ Freshest Farm Produce*/

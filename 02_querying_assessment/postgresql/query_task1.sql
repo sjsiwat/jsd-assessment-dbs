@@ -21,4 +21,6 @@ WHERE category = 'Side';
 -- Write in English or Thai. Do not skip this step.
 --
 -- Your thinking:
---
+
+/*  โจทย์ถามหา name กับ price ของทุกเมนูประเภท side
+ก้ใช้ select เลือก name,price  จากที่ไหนก้ menuitems อยุ่ตรงไหนก้ category = side */

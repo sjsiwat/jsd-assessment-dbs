@@ -22,3 +22,6 @@ WHERE role = 'Cook';
 --
 -- Your thinking:
 --
+/*  โจทย์อยากได้ ชื่อกับนามสกุลของพนักงานทุกคนที่เป็น cook  
+ก้เลือกจากคอลั่ม first_name , last_name จากไหนก้ตาราง staff ดูส่วนตำแหน่ง = cook  
+ */

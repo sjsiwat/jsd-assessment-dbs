@@ -22,3 +22,7 @@ db.ingredients.find({"stock_level": {$gte:100 }});
 //
 // Your thinking:
 //
+/* โจทย์อยากได้ วัตถุดิบทั้งหมดที่มี stock คงเหลือ มากกว่าหรือเท่ากับ 100
+ก้ใช้ find()  ต้องการหา stock level <=100  {"stock_level" : {$gte:100 }}
+$gte greater than ,equal 
+*/

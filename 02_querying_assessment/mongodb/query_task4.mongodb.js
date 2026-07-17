@@ -32,3 +32,27 @@ db.orders.aggregate([{
 //
 // Your thinking:
 //
+/*
+โจทย์อยากได้แค่ค่าเดียวคือ total revenue จาก orders
+ก้น่าจะต้องรวม order แล้วเอามาบวกราคากันทั้งหมด
+จากนั้นก้จะได้เป็น total_revenue
+
+order > $group > $sum(group of all order) > total_revenue
+
+_id: null คือเอาทุกอันเลย
+
+_id: "$category"
+
+แบ่งกลุ่มตาม category
+
+_id: "$staff.first_name"
+
+แบ่งกลุ่มตามชื่อพนักงาน
+
+_id: "$order_date"
+
+แบ่งกลุ่มตามวันที่
+
+_id: null
+
+ไม่แบ่งกลุ่ม รวมทุก document เป็นกลุ่มเดียว   */ 
