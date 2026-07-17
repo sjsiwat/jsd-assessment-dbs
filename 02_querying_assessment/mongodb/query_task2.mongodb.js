@@ -6,6 +6,11 @@
 // Hint: Write a query to find all orders handled by the staff member "Jane Doe".
 // Your query should only return the order_date and total_price fields for these orders.
 
+use("chrome-burger-db");
+db.orders.find({"staff.first_name": "Jane" , "staff.last_name":"Doe"},{ order_date:1, total_price:1 , _id:0});
+
+
+
 // Bonus: The dataset is identical in the PostgreSQL database, meaning the same business insight can be retrieved.
 // Write the equivalent query for PostgreSQL. See query_task2_bonus.sql
 

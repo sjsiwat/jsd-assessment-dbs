@@ -5,6 +5,10 @@
 //
 // Hint: Write a query to find all ingredients in the ingredients collection that have a stock_level of 100.00 or more.
 
+use("chrome-burger-db");
+db.ingredients.find({"stock_level": {$gte:100 }});
+
+
 // Bonus: The dataset is identical in the PostgreSQL database, meaning the same business insight can be retrieved.
 // Write the equivalent query for PostgreSQL. See query_task3_bonus.sql
 
