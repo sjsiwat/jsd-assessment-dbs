@@ -5,6 +5,12 @@
 --
 -- Hint: Write a query to find the names of all ingredients supplied by 'Freshest Farm Produce'.
 
+SELECT Ingredients.name
+FROM Ingredients
+JOIN Suppliers
+ON Ingredients.supplier_id = Suppliers.supplier_id
+WHERE Suppliers.name = 'Freshest Farm Produce';
+
 -- Bonus: The dataset is identical in the MongoDB database, meaning the same business insight can be retrieved.
 -- Write the equivalent query for MongoDB. See query_task4_bonus.mongodb.js
 

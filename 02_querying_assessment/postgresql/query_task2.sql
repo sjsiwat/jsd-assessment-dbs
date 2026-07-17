@@ -5,6 +5,10 @@
 --
 -- Hint: Write a query to list the first_name and last_name of all staff members whose role is 'Cook'.
 
+SELECT first_name , last_name
+FROM Staff
+WHERE role = 'Cook';
+
 -- Bonus: The dataset is identical in the MongoDB database, meaning the same business insight can be retrieved.
 -- Write the equivalent query for MongoDB. See query_task2_bonus.mongodb.js
 

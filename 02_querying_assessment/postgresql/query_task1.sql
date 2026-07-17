@@ -5,6 +5,10 @@
 --
 -- Hint: Write a query to find the name and price of all menu items that are in the 'Side' category.
 
+SELECT name , price
+FROM Menuitems
+WHERE category = 'Side';
+
 -- Bonus: The dataset is identical in the MongoDB database, meaning the same business insight can be retrieved.
 -- Write the equivalent query for MongoDB. See query_task1_bonus.mongodb.js
 

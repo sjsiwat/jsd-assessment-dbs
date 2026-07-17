@@ -7,6 +7,15 @@
 -- The result should show the staff member's full name (concatenated) and their total order count,
 -- ordered by the count in descending order.
 
+SELECT
+    CONCAT(Staff.first_name, ' ', Staff.last_name) AS staff_name,
+    COUNT(*) AS total_orders
+FROM Orders
+JOIN Staff
+ON Orders.staff_id = Staff.staff_id
+GROUP BY Staff.staff_id, Staff.first_name, Staff.last_name
+ORDER BY total_orders DESC;
+
 -- Bonus: The dataset is identical in the MongoDB database, meaning the same business insight can be retrieved.
 -- Write the equivalent query for MongoDB. See query_task3_bonus.mongodb.js
 
