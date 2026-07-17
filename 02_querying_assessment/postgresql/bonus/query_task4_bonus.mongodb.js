@@ -10,6 +10,18 @@
 // collection, then filter where the supplier name is 'Freshest Farm Produce' and return
 // only the ingredient names.
 
+use("chrome-burger-db");
+
+db.ingredients.aggregate([{$lookup: {
+  from: "suppliers",
+  localField: "supplier_id",
+  foreignField: "_id",
+  as: "supplier"  }}, 
+{ $match: { "supplier.name": "Freshest Farm Produce"}},
+
+{$project: { _id: 0, name: 1}}
+]);
+
 // ---------------------------------------------------------------
 // Your thinking process (required)
 // ---------------------------------------------------------------

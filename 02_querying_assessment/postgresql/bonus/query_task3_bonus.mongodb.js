@@ -10,6 +10,28 @@
 // The result should show each staff member's full name and their total order count,
 // ordered by the count in descending order.
 
+use("chrome-burger-db");
+
+db.orders.aggregate([
+  {
+    $group: {
+      _id: {
+        first_name: "$staff.first_name",
+        last_name: "$staff.last_name"
+      },
+      total_orders: {
+        $sum: "$total_price"
+      }
+    }
+  },
+  {
+    $sort: {
+    total_orders: -1
+    }
+  }
+]);
+
+
 // ---------------------------------------------------------------
 // Your thinking process (required)
 // ---------------------------------------------------------------

@@ -8,6 +8,10 @@
 // Hint: Write a query on the menu_items collection to find the name and price
 // of all documents where the category is 'Side'.
 
+use("chrome-burger-db");
+db.menu_items.find({ category: "Side"});
+
+
 // ---------------------------------------------------------------
 // Your thinking process (required)
 // ---------------------------------------------------------------
