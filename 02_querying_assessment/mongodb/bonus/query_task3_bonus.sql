@@ -8,6 +8,11 @@
 -- Hint: Write a query to find the name of all rows in the Ingredients table
 -- where the stock_level is greater than or equal to 100.
 
+SELECT *
+FROM Ingredients
+WHERE stock_level >= 100;
+
+
 -- ---------------------------------------------------------------
 -- Your thinking process (required)
 -- ---------------------------------------------------------------

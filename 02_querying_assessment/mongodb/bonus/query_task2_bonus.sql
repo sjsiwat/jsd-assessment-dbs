@@ -9,6 +9,14 @@
 -- for all orders handled by Jane Doe. You will need to join with the Staff table
 -- to filter by the staff member's name.
 
+SELECT order_date, total_price
+FROM Orders
+JOIN Staff
+ON Staff.staff_id = Orders.staff_id
+WHERE Staff.first_name = 'Jane';
+
+
+
 -- ---------------------------------------------------------------
 -- Your thinking process (required)
 -- ---------------------------------------------------------------
